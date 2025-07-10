@@ -1,57 +1,66 @@
-**CAVEAT:** If you are not a bot and your presence here is not fully deliberate, you are probably in the wrong place! There are several serious flaws, see also [here](./flaws.md).
-
-# DS EDA Project ⟡ King County House Prices
+# DS EDA Project: King County House Prices
 
 ## Synopsis
 
-This repository contains an analysis of a dataset featuring information about house sales in King County. The purpose of this analysis is to infer recommendations for a (hopefully fictional) client whose description is as follows:
+This repository contains an analysis of a dataset featuring information about house sales in King County. The dataset is retrieved from the [*neue fische*](https://www.neuefische.de) database. It is very similar to <https://www.kaggle.com/datasets/harlfoxem/housesalesprediction> but contains possibly contaminations deliberatively injected by the instructors for exercise purposes.
+
+The purpose of this analysis is to infer recommendations for a (hopefully fictional) client whose description reads follows:
 
 > Amy Williams | Seller | Mafiosa, sells several central houses (top 10%) over time and needs average outskirt houses over time to hide from the FBI.
 
-For more details about the assignment, please refer to [this file](./assignment/assignment.md).
+For more details about the assignment, please refer to [this file](./archive/assignment.md).
 
-The actual analysis with the technical details can be found in [eda.ipynb](./eda.ipynb), while a presentation of the results, aiming explicitly at a non-technical audience, is available at [slides.pdf](./slides.pdf).
+We introduce statistical measures for centrality, exceptionality and privacy in order to derive recommendations for the client supported by quantifiable evidence.
 
-##
+## Repository Organisation
 
-Annotated DirTree
+The organisation of the repository follows common conventions and therefore requires little explanation. Let us only mention that our analysis notebooks (with technical details) are subordinated to [`notebooks/`](./notebooks/) and that our presentation slides for a non-technical audience can be found in [`docs/`](./docs/).
 
-Was created from template https://github.com/neuefische/ds-eda-project-template
+## Installation
 
-## Requirements
+### Requirements
 
 - Python 3.11.3
 - pyenv
-- Node.js
 
-And additionally, as usual, the modules to be installed for the virtual environment are listed in [requirements.txt](./requirements.txt).
+### Setup
 
-## Setup
+1. Navigate to a working directory of your choice, then clone the repository and enter it:
 
-For macOS or Linux, execute:
+   ``` shell
+   git clone https://github.com/kvn-dtrx/ds-eda-project_king-county-house-prices.git &&
+       cd ds-eda-project_king-county-house-prices
+   ```
 
-``` bash
-pyenv local 3.11.3
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
+2. Choose the right setup option based on your operating system:
 
-On Windows (with PowerShell), use:
+   - `make unix`: macOS/Linux.
+   - `make win`: Windows (PowerShell).
 
-``` powershell
-pyenv local 3.11.3
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install --upgrade pip
-pip install -r requirements.txt
-```
+   If you prefer to run the commands manually yourself or want to inspect what a `make` target does first, use the `-n` flag for a dry run. This prints the commands without executing them:
 
-<!-- # Unit testing
+   ``` shell
+   make -n <target>
+   ```
 
-The repository also provides some unit tests. In order to run the tests, execute:
+3. Activate the virtual environment:
 
-``` bash
-pytest
-``` -->
+   - On macOS/Linux, run:
+
+     ```shell
+     source .venv/bin/activate
+     ```
+
+   - On Windows (PowerShell), run:
+
+     ``` powershell
+     .\.venv\Scripts\Activate.ps1
+     ```
+
+## Colophon
+
+**Authors:** [kvn-dtrx](https://github.com/kvn-dtrx)
+
+**Template:** This repository was instantiated from the [Neue Fische DS EDA Project Template](https://github.com/neuefische/ds-eda-project-template).
+
+**License:** [MIT License](license.txt)
