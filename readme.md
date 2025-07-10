@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-This repository contains an analysis of a dataset featuring information about house sales in King County. The dataset is retrieved from the neue fische database. It is very similar to <https://www.kaggle.com/datasets/harlfoxem/housesalesprediction> but contains possibly contaminations deliberatively injected by the instructors for exercise purposes.
+This repository contains an analysis of a dataset featuring information about house sales in King County. The dataset is retrieved from the [*neue fische*](https://www.neuefische.de) database. It is very similar to <https://www.kaggle.com/datasets/harlfoxem/housesalesprediction> but contains possibly contaminations deliberatively injected by the instructors for exercise purposes.
 
 The purpose of this analysis is to infer recommendations for a (hopefully fictional) client whose description reads follows:
 

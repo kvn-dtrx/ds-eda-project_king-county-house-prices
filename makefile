@@ -18,15 +18,15 @@ help:
 	@echo "    -s              : Silent mode (don't print executed commands)"
 	@echo "    --debug[=b|v|a] : Debug info (b=basic [default], v=verbose, a=all)"
 	@echo
-
 unix:
 	pyenv local $(PYTHON_VERSION)
 	python -m venv $(VENV)
 	$(VENV)/bin/python -m pip install --upgrade pip
 	$(VENV)/bin/python -m pip install -r requirements.txt
-
 win:
 	pyenv local $(PYTHON_VERSION)
 	python -m venv $(VENV)
 	.\$(VENV)\Scripts\python.exe -m pip install --upgrade pip
 	$(VENV)/bin/python -m pip install -r requirements.txt
+_presentation:
+	monolith --output "docs/presentation.html" "docs/presentation/index.html"
