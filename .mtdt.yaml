@@ -1,0 +1,7 @@
+project:
+  name: "DS EDA Project: King County House Prices"
+  description: Analysis of the King County House data set
+  github: https://github.com/kvn-dtrx/ds-eda-project_king-county-house-prices
+  authors:
+    - name: Kvn Dtrx
+      mail: kvn.dtrx+git@protonmail.ch
