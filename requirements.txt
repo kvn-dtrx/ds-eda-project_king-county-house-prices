@@ -13,7 +13,7 @@ pandas==2.1
 # psycopg2 - Python-PostgreSQL Database Adapter
 psycopg2-binary==2.9.10
 # Python library for Apache Arrow
-pyarrow==20.0.0
+pyarrow==23.0.1
 # Read key-value pairs from a .env file and set them as environment variables
 python-dotenv==1.2.2
 # Database Abstraction Library
