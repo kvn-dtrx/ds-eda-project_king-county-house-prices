@@ -1,3 +1,10 @@
+# ---
+# description: >-
+#   Convention: make = env/setup; presentation build lives in justfile
+# ---
+
+# ---
+
 PYTHON_VERSION := 3.11.3
 VENV := .venv
 
@@ -28,5 +35,3 @@ win:
 	python -m venv $(VENV)
 	.\$(VENV)\Scripts\python.exe -m pip install --upgrade pip
 	$(VENV)/bin/python -m pip install -r requirements.txt
-_presentation:
-	monolith --output "docs/presentation.html" "docs/presentation/index.html"

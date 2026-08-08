@@ -1,7 +1,13 @@
 project:
-  name: "DS EDA Project: King County House Prices"
-  description: Analysis of the King County House data set
-  github: https://github.com/kvn-dtrx/ds-eda-project_king-county-house-prices
+  id: e2bbc228-3375-48f0-9040-29708659b981
+  name: 'DS EDA Project: King County House Prices'
+  description: >-
+    Analysis of the King County House data set
   authors:
     - name: Kvn Dtrx
       mail: kvn.dtrx+git@protonmail.ch
+  license: null
+forges:
+  github:
+    url: https://github.com/kvn-dtrx/ds-eda-project_king-county-house-prices
+    visibility: public
